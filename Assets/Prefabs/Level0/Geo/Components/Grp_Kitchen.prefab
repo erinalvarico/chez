@@ -41,13 +41,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4478743552256780349}
     m_Modifications:
+    - target: {fileID: 937365408650250492, guid: d8e5b8df5b15b464c8dc62db2af44447, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 937365408650250492, guid: d8e5b8df5b15b464c8dc62db2af44447, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865263591098802714, guid: d8e5b8df5b15b464c8dc62db2af44447, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865263591098802714, guid: d8e5b8df5b15b464c8dc62db2af44447, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7008028958287539920, guid: d8e5b8df5b15b464c8dc62db2af44447, type: 3}
       propertyPath: m_Name
       value: Grp_GrilledCheese_A
       objectReference: {fileID: 0}
+    - target: {fileID: 8770954719084464586, guid: d8e5b8df5b15b464c8dc62db2af44447, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770954719084464586, guid: d8e5b8df5b15b464c8dc62db2af44447, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8793780392870877023, guid: d8e5b8df5b15b464c8dc62db2af44447, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 8793780392870877023, guid: d8e5b8df5b15b464c8dc62db2af44447, type: 3}
       propertyPath: m_LocalPosition.y
@@ -55,7 +79,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8793780392870877023, guid: d8e5b8df5b15b464c8dc62db2af44447, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8793780392870877023, guid: d8e5b8df5b15b464c8dc62db2af44447, type: 3}
       propertyPath: m_LocalRotation.w
@@ -103,9 +127,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4478743552256780349}
     m_Modifications:
+    - target: {fileID: 1305701899505181612, guid: bc1b4138c149f174ca8968d7b6728c83, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1305701899505181612, guid: bc1b4138c149f174ca8968d7b6728c83, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2302686426394626663, guid: bc1b4138c149f174ca8968d7b6728c83, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.34
+      value: -81
       objectReference: {fileID: 0}
     - target: {fileID: 2302686426394626663, guid: bc1b4138c149f174ca8968d7b6728c83, type: 3}
       propertyPath: m_LocalPosition.y
@@ -113,7 +145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302686426394626663, guid: bc1b4138c149f174ca8968d7b6728c83, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2302686426394626663, guid: bc1b4138c149f174ca8968d7b6728c83, type: 3}
       propertyPath: m_LocalRotation.w
@@ -146,6 +178,22 @@ PrefabInstance:
     - target: {fileID: 3114899571172343614, guid: bc1b4138c149f174ca8968d7b6728c83, type: 3}
       propertyPath: m_Name
       value: Grp_GrilledCheese_B
+      objectReference: {fileID: 0}
+    - target: {fileID: 5180515531640511153, guid: bc1b4138c149f174ca8968d7b6728c83, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5180515531640511153, guid: bc1b4138c149f174ca8968d7b6728c83, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7347524318406529284, guid: bc1b4138c149f174ca8968d7b6728c83, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7347524318406529284, guid: bc1b4138c149f174ca8968d7b6728c83, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
