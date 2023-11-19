@@ -10,6 +10,7 @@ public class SO_StationDisplay : MonoBehaviour
 
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI levelText;
+    public TextMeshProUGUI buttonText;
 
     public SpriteRenderer appearance;
     public SpriteRenderer item;
@@ -25,17 +26,22 @@ public class SO_StationDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        station.None();
+        nameText.text = station.type;
+        levelText.text = ("Level " + station.upgrade);
+        buttonText.text = "BUY";
+        buttonText.SetText(buttonText.text);
         item.enabled = false;
         appearance.sprite = station.sprite_inactive;
-        Debug.Log(nameText + " is inactive.");
+
+        station.None();
+        Debug.Log(nameText.text + " is inactive.");
 
         station.breakChance = station.intialBreakChance;
     }
 
     public void Trigger()
     {
-
+        Debug.Log("Trigger!");
         if(station.maxUpgrade && !station.broken)
         {
             // Completed so do nothing
@@ -45,42 +51,49 @@ public class SO_StationDisplay : MonoBehaviour
         {
             // Not bought so show the buy menu
             appearance.sprite = station.sprite_inactive;
-            Debug.Log(nameText + " is not purchased.");
+            nameText.SetText(nameText.text);
+            levelText.SetText(levelText.text);
+            Debug.Log(nameText.text + " is not purchased.");
             GUIInteraction.SetActive(true);
         }
         else if(!station.bought && (GUIInteraction.activeInHierarchy == true))
         {
             // Unshow the buy menu if it's shown
             appearance.sprite = station.sprite_inactive;
-            Debug.Log(nameText + " is not purchased.");
+            Debug.Log(nameText.text + " is not purchased.");
             GUIInteraction.SetActive(false);
         }
         else if(!station.broken && (GUIInteraction.activeInHierarchy == false))
         {
             // It's bought and not broken so show the Upgrade Menu
             appearance.sprite = station.sprite_active;
-            Debug.Log(nameText + " is purchased, and upgradable.");
+            nameText.SetText(nameText.text);
+            levelText.SetText(levelText.text);
+            Debug.Log(nameText.text + " is purchased, and upgradable.");
             GUIInteraction.SetActive(true);
         }
         else if(!station.broken && (GUIInteraction.activeInHierarchy == true))
         {
             // Unshow the Upgrade Menu if it's shown
             appearance.sprite = station.sprite_active;
-            Debug.Log(nameText + " is purchased, and upgradable.");
+            Debug.Log(nameText.text + " is purchased, and upgradable.");
             GUIInteraction.SetActive(false);
         }
         else if(station.broken && (GUIInteraction.activeInHierarchy == false))
         {
             // It's broken so show the Fix Menu
+            nameText.SetText(nameText.text);
+            levelText.text = "Station is broken!";
+            levelText.SetText(levelText.text);
             appearance.sprite = station.sprite_broken;
-            Debug.Log(nameText + " is broken.");
+            Debug.Log(nameText.text + " is broken.");
             GUIInteraction.SetActive(true);
         }
         else
         {
             // Unshow the Fix Menu
             appearance.sprite = station.sprite_broken;
-            Debug.Log(nameText + " is broken.");
+            Debug.Log(nameText.text + " is broken.");
             GUIInteraction.SetActive(false);
         }
     }
@@ -92,22 +105,32 @@ public class SO_StationDisplay : MonoBehaviour
             case 5:
                 // not purchased
                 doBuy();
+                buttonText.text = "BUY";
+                buttonText.SetText(buttonText.text);
                 break;
             case 4:
                 // purchase upgrade
                 doUpgrade();
+                buttonText.text = "UPGRADE";
+                buttonText.SetText(buttonText.text);
                 break;
             case 3:
                 // fix station
                 doFix();
+                buttonText.text = "FIX IT!";
+                buttonText.SetText(buttonText.text);
                 break;
             case 2:
                 // cook recipe
                 doCook();
+                buttonText.text = "COOK UP!";
+                buttonText.SetText(buttonText.text);
                 break;
             case 1:
                 // item present
                 itemPresent();
+                buttonText.text = "SERVE IT UP!";
+                buttonText.SetText(buttonText.text);
                 break;       
             case 0:
                 // do nothing: fully upgrade
@@ -122,6 +145,7 @@ public class SO_StationDisplay : MonoBehaviour
         // Set the bought flag and close the Buy Menu
         station.Purchased();
         item.enabled = false;
+        appearance.sprite = station.sprite_active;
         GUIInteraction.SetActive(false);
     }
 
@@ -136,17 +160,20 @@ public class SO_StationDisplay : MonoBehaviour
                 case 3:
                     // Turn on the third box
                     Rank3.sprite = station.sprite_rankactive;
-                    levelText.SetText("Level 3");
+                    levelText.text = "Level 3";
+                    levelText.SetText(levelText.text);
                     break;
                 case 2:
                     // Turn on the second box
                     Rank2.sprite = station.sprite_rankactive;
-                    levelText.SetText("Level 2");
+                    levelText.text = "Level 2";
+                    levelText.SetText(levelText.text);
                     break;
                 case 1:
                     // Turn on the first box
                     Rank1.sprite = station.sprite_rankactive;
-                    levelText.SetText("Level 1");
+                    levelText.text = "Level 1";
+                    levelText.SetText(levelText.text);
                     break;
                 case 0:
                 default:

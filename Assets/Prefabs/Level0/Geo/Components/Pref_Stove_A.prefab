@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 7342621829157083444}
   - component: {fileID: 3324785848470928079}
   - component: {fileID: 5904333453041068845}
+  - component: {fileID: 4221749337347456299}
   - component: {fileID: 4270202554234494473}
   m_Layer: 0
   m_Name: Sprt_Stove
@@ -254,6 +255,35 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4221749337347456299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8037197305802006092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4270202554234494473}
+          m_TargetAssemblyTypeName: SO_StationDisplay, Assembly-CSharp
+          m_MethodName: Trigger
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &4270202554234494473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,6 +299,7 @@ MonoBehaviour:
   station: {fileID: 11400000, guid: 77bafbd55b52e2148b81b4ef5421ab24, type: 2}
   nameText: {fileID: 4100268877551678087}
   levelText: {fileID: 1984357361082958253}
+  buttonText: {fileID: 4337295813325365805}
   appearance: {fileID: 3324785848470928079}
   item: {fileID: 7704324635172583965}
   recipe: {fileID: 6597053724118592455}
@@ -276,7 +307,7 @@ MonoBehaviour:
   Rank2: {fileID: 530212422948793608}
   Rank3: {fileID: 6785678547597687283}
   GUIInteraction: {fileID: 2040508551724763995}
-  progressBar: {fileID: 0}
+  progressBar: {fileID: 5266625380553465838}
 --- !u!1001 &1401202349050921731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -437,6 +468,17 @@ MonoBehaviour:
 --- !u!114 &4100268877551678087 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2866094470921713450, guid: 90ed55343e5242b47acf2845d7294704, type: 3}
+  m_PrefabInstance: {fileID: 2243211998759306669}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4337295813325365805 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2526614921412437888, guid: 90ed55343e5242b47acf2845d7294704, type: 3}
   m_PrefabInstance: {fileID: 2243211998759306669}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -693,6 +735,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2eb3fd7b29b76040a97a8b145d11a7d, type: 3}
+--- !u!114 &5266625380553465838 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6955447704084817522, guid: d2eb3fd7b29b76040a97a8b145d11a7d, type: 3}
+  m_PrefabInstance: {fileID: 2995027020393101724}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7dc0b66e6ed2de42be5a9ea7ee61256, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &6636324038471851933 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8469173828499154433, guid: d2eb3fd7b29b76040a97a8b145d11a7d, type: 3}

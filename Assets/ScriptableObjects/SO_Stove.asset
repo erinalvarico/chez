@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a4f3334df01f54586d2e2800a2efc7, type: 3}
   m_Name: SO_Stove
   m_EditorClassIdentifier: 
-  type: Stove
+  type: STOVE
   sprite_inactive: {fileID: 21300000, guid: a160f075b3b2e8641aaa0eb8325165e2, type: 3}
   sprite_active: {fileID: 21300000, guid: c785ac1a261503c4183643a519bff822, type: 3}
   sprite_process: {fileID: 21300000, guid: 87876c6f612b48d4f9156d59e693309c, type: 3}
@@ -22,8 +22,11 @@ MonoBehaviour:
   sprite_rankactive: {fileID: 21300000, guid: 34f5abfd5d17bb145b8e07f280bda71a, type: 3}
   upgrade: 0
   maximumUpgrade: 0
+  breakChance: 0
+  intialBreakChance: 0
+  state: 5
   maxUpgrade: 0
   broken: 0
-  bought: 1
+  bought: 0
   process: 0
   item: 0
