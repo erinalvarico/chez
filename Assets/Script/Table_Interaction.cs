@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,6 +18,8 @@ public class Table_Interaction : MonoBehaviour
 
     public void Trigger()
     {
+        Debug.Log("Reached here");
+
         if(completed)
         {
             // Completed so do nothing
