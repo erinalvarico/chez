@@ -159,6 +159,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3423366479074162137, guid: 669c451d2f09442469c0475cc03402b9, type: 3}
+      propertyPath: m_Size.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423366479074162137, guid: 669c451d2f09442469c0475cc03402b9, type: 3}
+      propertyPath: m_Size.y
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3501252274811442946, guid: 669c451d2f09442469c0475cc03402b9, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -167,6 +175,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3695180289801086622, guid: 669c451d2f09442469c0475cc03402b9, type: 3}
+      propertyPath: progressBar
+      value: 
+      objectReference: {fileID: 3981644901064097682}
     - target: {fileID: 5822307584561069266, guid: 669c451d2f09442469c0475cc03402b9, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -200,6 +212,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 669c451d2f09442469c0475cc03402b9, type: 3}
+--- !u!114 &3981644901064097682 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4689350697814108025, guid: 669c451d2f09442469c0475cc03402b9, type: 3}
+  m_PrefabInstance: {fileID: 8525964371314809067}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7dc0b66e6ed2de42be5a9ea7ee61256, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &6276243454224861758 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2399289709955814101, guid: 669c451d2f09442469c0475cc03402b9, type: 3}

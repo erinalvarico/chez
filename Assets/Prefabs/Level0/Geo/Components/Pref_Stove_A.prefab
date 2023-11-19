@@ -253,7 +253,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 10, y: 10}
   m_EdgeRadius: 0
 --- !u!114 &4221749337347456299
 MonoBehaviour:
@@ -381,6 +381,22 @@ PrefabInstance:
     - target: {fileID: 247745099579182838, guid: 90ed55343e5242b47acf2845d7294704, type: 3}
       propertyPath: m_Name
       value: Pref_UIInteraction
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595674722624247812, guid: 90ed55343e5242b47acf2845d7294704, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595674722624247812, guid: 90ed55343e5242b47acf2845d7294704, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4270202554234494473}
+    - target: {fileID: 2595674722624247812, guid: 90ed55343e5242b47acf2845d7294704, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: interaction
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595674722624247812, guid: 90ed55343e5242b47acf2845d7294704, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SO_StationDisplay, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6090940438074564513, guid: 90ed55343e5242b47acf2845d7294704, type: 3}
       propertyPath: m_LocalPosition.x

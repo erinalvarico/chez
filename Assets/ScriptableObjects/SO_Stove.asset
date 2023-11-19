@@ -22,9 +22,8 @@ MonoBehaviour:
   sprite_rankactive: {fileID: 21300000, guid: 34f5abfd5d17bb145b8e07f280bda71a, type: 3}
   upgrade: 0
   maximumUpgrade: 0
-  breakChance: 0
-  intialBreakChance: 0
-  state: 5
+  breakChance: 33
+  stateVar: 0
   maxUpgrade: 0
   broken: 0
   bought: 0
