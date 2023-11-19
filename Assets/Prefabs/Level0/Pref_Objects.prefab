@@ -199,14 +199,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6377667705762346653, guid: 397dd5f79ed90794f8d88f44814a6fab, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6377667705762346653, guid: 397dd5f79ed90794f8d88f44814a6fab, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6572236011809860587, guid: 397dd5f79ed90794f8d88f44814a6fab, type: 3}
       propertyPath: m_Name
       value: Grp_Area_Dining
