@@ -35,6 +35,7 @@ public class SO_StationDisplay : MonoBehaviour
 
         station.breakChance = SO_Station.INITIAL_BREAK_CHANCE;
         station.upgrade = 0;
+        station.maximumUpgrade = 3;
         station.maxUpgrade = false;
         station.broken = false;
         station.bought = false;
@@ -186,7 +187,6 @@ public class SO_StationDisplay : MonoBehaviour
             if (station.upgrade == station.maximumUpgrade)
             {
                 // If completed, set the completed flag and close the Upgrade Menu
-                station.MaxUpgrade();
                 GUIInteraction.SetActive(false);
             }
             progressBar.doProgress();

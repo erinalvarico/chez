@@ -65,13 +65,14 @@ public void Purchased()
 
 public void Upgrade()
 {
-    upgrade += 1;
+    upgrade++;
     lastState = stateVar;
     stateVar = state.Upgrade0 + upgrade;
     if(upgrade == maximumUpgrade)
         {
             lastState = stateVar;
             stateVar = state.MaxUpgrade;
+            MaxUpgrade();
         }
     Debug.Log("this station has been upgraded!");
     

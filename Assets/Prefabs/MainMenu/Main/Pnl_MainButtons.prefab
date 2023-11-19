@@ -175,6 +175,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Btn_Settings
       objectReference: {fileID: 0}
+    - target: {fileID: 4883796136835229189, guid: a39f5a9d5837580448a9cb3c9bffbeef, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -281,6 +285,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8216811979271615369, guid: 396d268822fdd9e418b1d320e63b017d, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -377,6 +385,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5565405115148387977, guid: 942fe3fbcb8bb01458b4f40578ef98dd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7838579165466361336, guid: 942fe3fbcb8bb01458b4f40578ef98dd, type: 3}
+      propertyPath: m_SortingLayer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8743538729570452613, guid: 942fe3fbcb8bb01458b4f40578ef98dd, type: 3}
@@ -484,6 +496,14 @@ PrefabInstance:
     - target: {fileID: 2771610948186554939, guid: 429146b3d6a3c6544b2d7aef06a0c8ac, type: 3}
       propertyPath: m_Name
       value: Btn_Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388555074325056018, guid: 429146b3d6a3c6544b2d7aef06a0c8ac, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388555074325056018, guid: 429146b3d6a3c6544b2d7aef06a0c8ac, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
