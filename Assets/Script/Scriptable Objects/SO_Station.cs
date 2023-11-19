@@ -14,14 +14,19 @@ public class SO_Station : ScriptableObject
     public Sprite sprite_process;
     public Sprite sprite_item;
     public Sprite sprite_broken;
+    public Sprite sprite_rankinactive;
+    public Sprite sprite_rankactive;
 
     // Var int --
     public int upgrade;
     public int maximumUpgrade;
+    public int breakChance;
+    public int intialBreakChance;
+    public int state;
 
     // Var bools --
-    public bool maxUpgrade = false;
-    public bool broken = false;
+    public bool maxUpgrade;
+    public bool broken;
     public bool bought;
     public bool process;
     public bool item;
@@ -29,12 +34,15 @@ public class SO_Station : ScriptableObject
 public void None()
 {
     bought = false;
+    state = 5;
     Debug.Log("this station has not been purchased it.");
 }
 
 public void Purchased()
 {
     bought = true;
+    state = 4;
+    intialBreakChance = 300;
     Debug.Log("this station has been bought!");
     
 }
@@ -42,6 +50,7 @@ public void Purchased()
 public void Upgrade()
 {
     upgrade += 1;
+    state = 4;
     Debug.Log("this station has been upgraded!");
     
 }
@@ -49,6 +58,7 @@ public void Upgrade()
 public void MaxUpgrade()
 {
     maxUpgrade = true;
+    state = 0;
     Debug.Log("this station is max upgrade!");
     
 }
@@ -70,6 +80,7 @@ public void Process()
 public void Item()
 {
     item = true;
+    state = 1;
     Debug.Log("stove has finished a dish!");
 
 }
@@ -77,6 +88,7 @@ public void Item()
 public void Broken()
 {
     broken = true;
+    state = 3;
     Debug.Log("the stove is broken.");
 
 }
@@ -84,6 +96,7 @@ public void Broken()
 public void Fixed()
 {
     broken = false;
+    state = 4;
     Debug.Log("the stove is fixed!");
 
 }

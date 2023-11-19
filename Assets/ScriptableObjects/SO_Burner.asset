@@ -18,6 +18,8 @@ MonoBehaviour:
   sprite_process: {fileID: 21300000, guid: 87876c6f612b48d4f9156d59e693309c, type: 3}
   sprite_item: {fileID: 21300000, guid: 51966c58910aec34f9e37e2845530bfb, type: 3}
   sprite_broken: {fileID: 21300000, guid: 0df7f7c001bc62d42bcdccdcb458fa1f, type: 3}
+  sprite_rankinactive: {fileID: 21300000, guid: 8104029e3b7d49f468f1cba5ffb6612e, type: 3}
+  sprite_rankactive: {fileID: 21300000, guid: 34f5abfd5d17bb145b8e07f280bda71a, type: 3}
   upgrade: 0
   maximumUpgrade: 0
   maxUpgrade: 0
