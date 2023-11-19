@@ -6,7 +6,7 @@ using UnityEngine;
 public class SO_Station : ScriptableObject
 {
     // Var string --
-    public new string type;
+    public string type;
 
     // Var sprite --
     public Sprite sprite_inactive;
