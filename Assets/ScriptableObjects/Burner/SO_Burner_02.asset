@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 08a4f3334df01f54586d2e2800a2efc7, type: 3}
-  m_Name: SO_Burner
+  m_Name: SO_Burner_02
   m_EditorClassIdentifier: 
   type: BURNER
   sprite_inactive: {fileID: 21300000, guid: a160f075b3b2e8641aaa0eb8325165e2, type: 3}
