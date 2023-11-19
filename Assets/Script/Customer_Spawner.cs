@@ -7,6 +7,9 @@ public class Customer_Spawner : MonoBehaviour
 {
 
     public Transform[] spawnPoints;
+    public Transform[] leftPath;
+    public Transform[] rightPath;
+    public Transform[] centerPath;
     public GameObject[] customerPrefabs;
     private float startDelay;
     public int delayLowerLimit;
@@ -21,12 +24,11 @@ public class Customer_Spawner : MonoBehaviour
 
     void SpawnCustomer()
     {
-        int customerCount = GameObject.FindGameObjectsWithTag("Customer").Length;
+        int customerCount = GameObject.FindGameObjectsWithTag("Right_Spawn_Player").Length + GameObject.FindGameObjectsWithTag("Left_Spawn_Player").Length;
         if (customerCount < maxCustomers)
         {
-            Debug.Log("SPAWNING CUSTOMER - " + customerCount);
-            var spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length - 1)].position;
-            Debug.Log("SPAWN POINT " + spawnPoint);
+            int spawnPointIndex = Random.Range(0, spawnPoints.Length);
+            Transform spawnPoint = spawnPoints[spawnPointIndex];
 
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < spawnPoints.Length; i++)
@@ -35,7 +37,18 @@ public class Customer_Spawner : MonoBehaviour
                 sb.Append(" ");
             }
             Debug.Log(sb.ToString());
-            Instantiate(customerPrefabs[Random.Range(0, customerPrefabs.Length-1)], new Vector3(250, 165, -3), transform.rotation);
+            Instantiate(customerPrefabs[Random.Range(0, customerPrefabs.Length-1)], new Vector3(spawnPoint.position.x, spawnPoint.position.y, spawnPoint.position.z), transform.rotation);
+            Debug.Log("SPAWN POINT INDEX " + spawnPointIndex);
+            if (spawnPointIndex == 0)
+            {
+                Debug.Log("IN LEFT");
+                gameObject.tag = "Left_Spawn_Player";
+            }
+            else if (spawnPointIndex == 1)
+            {
+                Debug.Log("IN RIGHT");
+                gameObject.tag = "Right_Spawn_Player";
+            }
         }
     }
 }

@@ -41,6 +41,10 @@ public class Chef_Patrol : MonoBehaviour
         {
             targetPoint = 1;
         }
+        else
+        {
+            targetPoint = 0;
+        }
     }
 
     void ChangeSprite(Sprite sprite)
@@ -57,6 +61,7 @@ public class Chef_Patrol : MonoBehaviour
     {
         if (collision.gameObject.tag == "Station_Stove")
         {
+            Debug.Log("IN STATION STOVE");
             transform.position = Vector3.MoveTowards(transform.position, patrolPoints[targetPoint].position, 0f);
             StartCoroutine(Wait(workingSprite));
             targetPoint = 0;

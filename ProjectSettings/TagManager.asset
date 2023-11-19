@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Station_Stove
   - Customer
+  - Left_Spawn_Player
+  - Right_Spawn_Player
   layers:
   - Default
   - TransparentFX

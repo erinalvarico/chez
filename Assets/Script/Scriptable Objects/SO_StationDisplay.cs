@@ -19,7 +19,7 @@ public class SO_StationDisplay : MonoBehaviour
     {
         stove.None();
         appearance.sprite = stove.sprite_inactive;
-        Debug.Log("Stove A is inactive.");
+      //  Debug.Log("Stove A is inactive.");
     }
 
     void Update()
@@ -33,13 +33,13 @@ public class SO_StationDisplay : MonoBehaviour
         {   
             stove.Purchased();
             appearance.sprite = stove.sprite_active;
-            Debug.Log("Stove A is active.");
+          //  Debug.Log("Stove A is active.");
         }
     }
 
     void None()
     {
             appearance.sprite = stove.sprite_inactive;
-            Debug.Log("Stove A is inactive.");
+          //  Debug.Log("Stove A is inactive.");
     }
 }

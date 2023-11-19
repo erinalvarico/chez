@@ -29,7 +29,7 @@ public class SO_Station : ScriptableObject
 public void None()
 {
     bought = false;
-    Debug.Log("this station has not been purchased it.");
+    //Debug.Log("this station has not been purchased it.");
 }
 
 public void Purchased()
