@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08a4f3334df01f54586d2e2800a2efc7, type: 3}
+  m_Name: SO_Table_02
+  m_EditorClassIdentifier: 
+  type: DINING TABLE
+  sprite_inactive: {fileID: 21300000, guid: a160f075b3b2e8641aaa0eb8325165e2, type: 3}
+  sprite_active: {fileID: 21300000, guid: 40367d4123317cd4dafafbf657aaca27, type: 3}
+  sprite_process: {fileID: 21300000, guid: 87876c6f612b48d4f9156d59e693309c, type: 3}
+  sprite_item: {fileID: 21300000, guid: 51966c58910aec34f9e37e2845530bfb, type: 3}
+  sprite_broken: {fileID: 21300000, guid: 0df7f7c001bc62d42bcdccdcb458fa1f, type: 3}
+  sprite_rankinactive: {fileID: 21300000, guid: 8104029e3b7d49f468f1cba5ffb6612e, type: 3}
+  sprite_rankactive: {fileID: 21300000, guid: 34f5abfd5d17bb145b8e07f280bda71a, type: 3}
+  upgrade: 0
+  maximumUpgrade: 0
+  breakChance: 300
+  intialBreakChance: 300
+  state: 3
+  maxUpgrade: 0
+  broken: 1
+  bought: 1
+  process: 0
+  item: 0
