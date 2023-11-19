@@ -8,6 +8,7 @@ TagManager:
   - Customer
   - Left_Spawn_Player
   - Right_Spawn_Player
+  - Station_Seat
   layers:
   - Default
   - TransparentFX
